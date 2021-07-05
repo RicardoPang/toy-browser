@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/client.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:8088",
+      "webRoot": "${workspaceRoot}"
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "webRoot": "${workspaceRoot}"
+    },
+    {
+      "name": "Launch index.html (disable sourcemaps)",
+      "type": "chrome",
+      "request": "launch",
+      "sourceMaps": false,
+      "file": "${workspaceRoot}/index.html"
+    }
+  ]
+}
