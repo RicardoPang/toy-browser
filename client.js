@@ -90,5 +90,5 @@ void (async function () {
 
   let viewport = images(800, 600);
   render(viewport, dom);
-  viewport.save('../dist/viewport.jpg');
+  viewport.save('viewport.jpg');
 })();
